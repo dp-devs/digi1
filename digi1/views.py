@@ -2,6 +2,7 @@ from django.shortcuts import render
 from django.views.decorators.csrf import csrf_exempt
 from rest_framework.parsers import JSONParser
 from django.http.response import JsonResponse
+from django.http import HttpResponse
 
 from digi1.models import Departments,Employees
 from digi1.serializers import DepartmentSerializer,EmployeeSerializers
