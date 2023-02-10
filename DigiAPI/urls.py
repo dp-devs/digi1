@@ -24,8 +24,3 @@ urlpatterns = [
     url(r'^',include('digi1.urls')),
     url('/',include('digi1.urls'))
 ]
-
-import os
-BASE_DIR = Path(__file__).resolve().parent.parent
-STATICFILES_DIRS = os.path.join(BASE_DIR, 'static'),
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
