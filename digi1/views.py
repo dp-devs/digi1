@@ -8,6 +8,9 @@ from digi1.models import Departments,Employees
 from digi1.serializers import DepartmentSerializer,EmployeeSerializers
 # Create your views here.
 
+def index(request):
+    return HttpResponse("Hemlo Worlmd")
+
 @csrf_exempt
 def departmentApi(request,id=0):
     if request.method=='GET':

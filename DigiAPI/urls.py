@@ -21,7 +21,8 @@ from pathlib import Path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    url(r'^',include('digi1.urls'))
+    url(r'^',include('digi1.urls')),
+    url('app/',include('digi1.urls'))
 ]
 
 import os

@@ -4,6 +4,7 @@ from digi1 import views
 
 
 urlpatterns=[
+    url('',views.index,name='index'),
     url(r'^department$',views.departmentApi),
     url(r'^department/([0-9]+)$',views.departmentApi),
 
